@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#087f8c">
 
-  <title>MediLingo — Account Deletion Request</title>
+  <title>MediLingo | Account Deletion</title>
 
   <style>
     * {
@@ -14,62 +15,108 @@
     }
 
     body {
+      margin: 0;
+      padding: 24px 16px;
       font-family: Arial, Helvetica, sans-serif;
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 28px 20px;
       line-height: 1.7;
       color: #243447;
-      background: #f4f8fb;
+      background: #f1f6fa;
     }
 
     main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 30px;
       background: #ffffff;
-      padding: 28px;
-      border-radius: 14px;
-      box-shadow: 0 3px 18px rgba(0, 0, 0, 0.06);
+      border-radius: 16px;
+      box-shadow: 0 5px 24px rgba(20, 50, 70, 0.08);
+    }
+
+    .brand {
+      color: #087f8c;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .byline {
+      margin-top: 0;
+      color: #526273;
     }
 
     h1, h2 {
       color: #123b5d;
+      line-height: 1.3;
     }
 
-    a {
+    h1 {
+      margin-top: 30px;
+      font-size: 28px;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 20px;
+    }
+
+    .notice {
+      margin: 22px 0;
+      padding: 16px;
+      background: #eaf7f5;
+      border-left: 4px solid #087f8c;
+      border-radius: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 8px 8px 8px 0;
+      padding: 12px 18px;
+      border-radius: 8px;
+      background: #087f8c;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .button:hover {
+      background: #066b75;
+    }
+
+    .secondary {
+      background: #123b5d;
+    }
+
+    a:not(.button) {
       color: #087f8c;
       overflow-wrap: anywhere;
     }
 
-    .brand {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #087f8c;
-    }
-
-    .notice {
-      background: #eaf7f5;
-      padding: 14px;
-      border-radius: 8px;
-      margin: 20px 0;
-    }
-
-    .email-link {
-      display: inline-block;
-      background: #087f8c;
-      color: #ffffff;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .email-link:hover {
-      background: #066b75;
+    li {
+      margin-bottom: 8px;
     }
 
     footer {
-      margin-top: 28px;
-      font-size: 0.9rem;
+      margin-top: 30px;
+      padding-top: 18px;
+      border-top: 1px solid #e1e8ee;
+      font-size: 14px;
       color: #526273;
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 22px 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .button {
+        display: block;
+        margin-right: 0;
+      }
     }
   </style>
 </head>
@@ -77,51 +124,57 @@
 <body>
   <main>
     <div class="brand">MediLingo</div>
-    <p><strong>By Dr Abdullah Khan</strong></p>
+    <p class="byline"><strong>By Dr Abdullah Khan</strong></p>
 
     <h1>Account Deletion Request</h1>
 
     <p>
-      MediLingo users can request deletion of their account and
-      associated personal data by following the instructions on this page.
+      You can request deletion of your MediLingo account and associated
+      personal data using the options on this page.
     </p>
 
     <div class="notice">
-      <strong>Important:</strong>
-      To protect your account, please submit the request from the
-      email address associated with your MediLingo account whenever possible.
+      <strong>How it works:</strong>
+      Choose an email option below and send us your account deletion
+      request. Your account will not be deleted simply by opening this page.
     </div>
 
-    <h2>How to request account deletion</h2>
+    <h2>Request account deletion</h2>
 
     <ol>
-      <li>
-        Click the email link below.
-      </li>
-      <li>
-        Use the subject line
-        <strong>MediLingo Account Deletion Request</strong>.
-      </li>
-      <li>
-        Include the email address you used to register for MediLingo.
-      </li>
-      <li>
-        We may ask for reasonable verification before processing your request.
-      </li>
+      <li>Choose one of the email options below.</li>
+      <li>Include the email address used to register for MediLingo.</li>
+      <li>Send the message to our support email address.</li>
     </ol>
 
     <p>
       <a
-        class="email-link"
-        href="mailto:briefingers@gmail.com?subject=MediLingo%20Account%20Deletion%20Request"
+        class="button"
+        href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=briefingers%40gmail.com&amp;su=MediLingo%20Account%20Deletion%20Request&amp;body=Hello%20MediLingo%20Support%2C%0A%0AI%20request%20deletion%20of%20my%20MediLingo%20account%20and%20associated%20personal%20data.%0A%0ARegistered%20account%20email%3A%20"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        Email an Account Deletion Request
+        Open Gmail Deletion Request
       </a>
+
+      <a
+        class="button secondary"
+        href="mailto:briefingers@gmail.com?subject=MediLingo%20Account%20Deletion%20Request&amp;body=Hello%20MediLingo%20Support%2C%0A%0AI%20request%20deletion%20of%20my%20MediLingo%20account%20and%20associated%20personal%20data.%0A%0ARegistered%20account%20email%3A%20"
+      >
+        Open Default Email App
+      </a>
+    </p>
+
+    <p>
+      You can also email us directly at
+      <a href="mailto:briefingers@gmail.com">briefingers@gmail.com</a>
+      with the subject
+      <strong>MediLingo Account Deletion Request</strong>.
     </p>
 
     <h2>What data may be deleted?</h2>
 
-    <p>Depending on the data associated with your account, deletion may include:</p>
+    <p>Depending on the information associated with your account, deletion may include:</p>
 
     <ul>
       <li>Your MediLingo account and authentication profile.</li>
@@ -130,32 +183,38 @@
       <li>Payment request records and uploaded payment receipts, where applicable and where retention is not legally required.</li>
     </ul>
 
-    <h2>Processing and data retention</h2>
+    <h2>Processing your request</h2>
 
     <p>
-      We will review your request, verify that it is authorized, and
-      process eligible deletions. Some information may need to be retained
-      for legal, accounting, security, fraud-prevention, or dispute-resolution
-      purposes. Any retained data will be limited to the applicable purpose
-      and retention period.
+      We will review your request and may ask for reasonable verification
+      to confirm that you own the account. We will then process eligible
+      account and data deletion requests.
     </p>
 
     <p>
-      We will contact you if additional information is required to process
-      your request.
+      Certain information may need to be retained where required for
+      legal, accounting, security, fraud-prevention, or dispute-resolution
+      purposes. Any retained information will be limited to the applicable
+      purpose and retention period.
+    </p>
+
+    <p>
+      Opening an email draft does not submit your request. You must send
+      the email for us to receive it.
     </p>
 
     <h2>Privacy questions</h2>
 
     <p>
-      For questions about account deletion or personal data, contact:
-      <a href="mailto:briefingers@gmail.com">briefingers@gmail.com</a>
+      For account deletion or privacy questions, contact
+      <a href="mailto:briefingers@gmail.com">briefingers@gmail.com</a>.
     </p>
 
     <footer>
       <p>
         <a href="./">Return to MediLingo Privacy Policy</a>
       </p>
+      <p>© MediLingo</p>
     </footer>
   </main>
 </body>
